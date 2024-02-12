@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>SUBASTAS</title>
+    <style>
+        #container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>INICIAR LA SUBASTA ANTES DE ELEGUIR UN USUARIO Y REALIZAR LA OFERTA</h1>
+        <div id="buttons">
+            <button onclick="elegirUsuario()">Elegir Usuario</button>
+            <button onclick="verInformacion()">Información</button>
+            <button onclick="iniciarSubasta()">Iniciar</button> 
+        </div>
+        <div id="userContainer" style="display: none;">
+            <p>Usuario: <span id="selectedUser">Ninguno</span></p>
+            <input type="number" id="ofertaInput" placeholder="Ingrese su oferta">
+            <button onclick="realizarOferta()">Realizar Oferta</button>
+        </div>
+        <div id="infoContainer" style="display: none;">
+            <p>Tiempo restante: <span id="tiempoRestante">30</span> s</p>
+            <p>Valor actual: $<span id="valorActual">100000</span></p>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
