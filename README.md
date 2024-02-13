@@ -10,3 +10,4 @@
 - Daniel Santiago Vargas
 - Tania Lizeth Trejo
 - Rafael Alejandro Lopez Belalcazar
+- Jesus David Guerrero
